@@ -1,0 +1,99 @@
+body {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(199, 208, 236);
+  background-image: url("./images/snowfall.jpg");
+  background-repeat: fixed;
+  background-size: cover;
+}
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(204, 215, 250);
+  opacity: .7;
+  transition: opacity .4s, height 1s;
+}
+.header:hover {
+  height: 0;
+}
+.title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h2 {
+  display: block;
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #fff;
+  line-height: 1;
+}
+.container {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .year {
+  flex-wrap: wrap;
+}
+.container .year .month {
+  width: 80px;
+  height: 30px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #90A8C0;
+  opacity: .9;
+
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  line-height : 30px;
+}
+.container .year .art {
+  width: 80px;
+  height: 200px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  /* background-color: green; */
+  overflow: hidden;
+  transition: .6s;
+}
+.art:hover {
+  transform: scale(1.4);
+  z-index: 1;
+}
+.art .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90px;
+}
+
+.year:nth-child(1) .image { background-image: url("./images/1월.png"); }
+.year:nth-child(2) .image {background-image: url("./images/2월.png");}
+.year:nth-child(3) .image {background-image: url("./images/3월.png");}
+.year:nth-child(4) .image {background-image: url("./images/4월.png");}
+.year:nth-child(5) .image {background-image: url("./images/5월.png");}
+.year:nth-child(6) .image {background-image: url("./images/6월.png");}
+.year:nth-child(7) .image {background-image: url("./images/7월.png");}
+.year:nth-child(8) .image {background-image: url("./images/8월.png");}
+.year:nth-child(9) .image {background-image: url("./images/9월.png");}
+.year:nth-child(10) .image {background-image: url("./images/10월.png");}
+.year:nth-child(11) .image {background-image: url("./images/11월.png");}
+.year:nth-child(12) .image {background-image: url("./images/12월.png");}
